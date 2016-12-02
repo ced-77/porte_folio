@@ -1,0 +1,56 @@
+
+/* CSS Document */
+
+/*
+  config generale
+*/
+* {
+ margin: 0;
+ padding; 0;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+body {
+  font-size: 1.5rem;
+  
+}
+
+header, main, footer {
+  max-width: 95rem;
+  margin: auto;
+}
+
+ul, li {
+	style-decoration:none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* fin confg generale */
+
+
+/*
+  config de l'image de background
+*/
+
+#picture, #image {
+	width: 100%;
+ 
+}
+
+img {
+  margin:auto;
+	width: 99%;
+  opacity: .5; 
+ 
+}
+
