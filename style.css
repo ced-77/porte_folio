@@ -27,7 +27,9 @@ header, main, footer {
 }
 
 ul, li {
-	style-decoration:none;
+	list-style:none;
+	display:inline-block;
+	margin:.5rem;
 }
 
 a {
