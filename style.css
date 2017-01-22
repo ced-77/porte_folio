@@ -24,7 +24,7 @@ html {
 
 
 body {
-  font-size: 1.5rem;
+  font-size: 2rem;
   
 }
 
@@ -58,7 +58,7 @@ h2 {
 }
 
 section {
-  height: 20rem;
+ /* height: 20rem;*/
 }
 
 
@@ -97,12 +97,14 @@ section {
 
  }
 
+ a {
+  font-size: 2rem;
+ }
+
 
 /*
-  config de l'image de background
+  config de l'image de background et du titre
 */
-
-
 
 
 #picture {
@@ -114,11 +116,12 @@ section {
   background-repeat: no-repeat; /* annule toute repetition de l'image */
   background-size: 100%; /* definie sa largeur à 100% de la fenettre */
   background-position: center; /* place l'image par rapport à son centre */
-  
-
  
 }
 
+#picture h2 {
+  padding-bottom: 5rem;
+}
 
 
 /*
@@ -128,6 +131,11 @@ section {
  #presentation {
   background-color: black;
   color: white;
+ }
+
+ #presentation p {
+  padding: 2rem 5rem 2rem 5rem;
+
  }
 
 
@@ -145,6 +153,10 @@ section {
 
     nav aside {
       display: none;
+    }
+
+    a:hover {
+      color:cyan;
     }
 
 
