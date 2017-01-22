@@ -44,8 +44,17 @@ a {
 	color: white;
 }
 
-h2 {
+h1 {
+  padding-top: 3rem;
   text-align: center;
+  font-size: 4rem;
+  font-weight:bold;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 5rem;
 }
 
 section {
@@ -61,12 +70,13 @@ section {
  
  header {
   position: relative;
+  height: 4rem;
  }
 
  nav {
   z-index: 2;
   text-align: center;
-
+  height: 4rem;
   min-width: 100%;
   margin: auto;
   position: fixed;
@@ -75,19 +85,69 @@ section {
   color: white;
  }
 
+ nav ul {
+  display: none;
+ }
+
+ nav aside {
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 3rem;
+  padding-top: 0.4rem;
+
+ }
+
 
 /*
   config de l'image de background
 */
 
-#picture, #image {
+
+
+
+#picture {
+  margin: auto;
+  padding:2rem;
 	width: 100%;
+  max-height: 50rem; /* defini la hauteur de la balise */
+  background-image: url("images/Projet_pholio_fuji_(Mt_Mitsutoge)_1.jpg");
+  background-repeat: no-repeat; /* annule toute repetition de l'image */
+  background-size: 100%; /* definie sa largeur à 100% de la fenettre */
+  background-position: center; /* place l'image par rapport à son centre */
+  
+
  
 }
 
-img {
-  margin:auto;
-	width: 99%;
-  opacity: .5; 
+
+
+/*
+  Configuration de la section presentation
+ */
+
+ #presentation {
+  background-color: black;
+  color: white;
+ }
+
+
+
+
+/*
+  Configuration pour laptop et desktop
+ */
+@media screen and (min-width:720px ) {
+
+    nav ul {
+      display: initial;
+
+    }
+
+    nav aside {
+      display: none;
+    }
+
+
  
+ /* fin de responsive design pour laptop et desktop */ 
 }
