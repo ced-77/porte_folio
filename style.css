@@ -1,6 +1,14 @@
 
 /* CSS Document */
 
+
+/*
+  utiliser le jquery parallax
+
+
+
+ */
+
 /*
   config generale
 */
@@ -22,7 +30,7 @@ body {
 }
 
 header, main, footer {
-  max-width: 95rem;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -34,10 +42,39 @@ ul, li {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
+h2 {
+  text-align: center;
+}
+
+section {
+  height: 20rem;
+}
+
+
 /* fin confg generale */
+
+/*
+  config de la nav
+ */
+ 
+ header {
+  position: relative;
+ }
+
+ nav {
+  z-index: 2;
+  text-align: center;
+
+  min-width: 100%;
+  margin: auto;
+  position: fixed;
+  background-color: black;
+ 
+  color: white;
+ }
 
 
 /*
