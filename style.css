@@ -1,6 +1,5 @@
 /* CSS Document */
 
-
 /*
   utiliser le jquery parallax
 
@@ -18,8 +17,6 @@
 html {
   font-size: 39.5%; /* Ajustement de la taille pour faire coinsider l'image */
 }
-
-
 
 body {
   font-size: 2rem;
@@ -108,13 +105,14 @@ section {
 
 #picture {
   margin: auto;
-  padding:2rem;
+  padding-top:2rem;
 	width: 100%;
   max-height: 50rem; /* defini la hauteur de la balise */
   background-image: url("images/Projet_pholio_fuji_(Mt_Mitsutoge)_1.jpg");
   background-repeat: no-repeat; /* annule toute repetition de l'image */
   background-size: 100%; /* definie sa largeur à 100% de la fenettre */
-  background-position: center; /* place l'image par rapport à son centre */
+  background-position: center 2.5rem; /* place l'image par rapport à son centre */
+  background-attachment: fixed; /* mettre l'image en position fixe pour le paralax */
  
 }
 
@@ -147,7 +145,7 @@ section {
  @media screen and (min-width:480px) {
 
   html {
-    font-size: 62.5%;
+    font-size: 59.5%;
   }
 
   /* fin du style pour les 480px */
@@ -158,26 +156,41 @@ section {
 /*
   Configuration pour laptop et desktop
  */
-@media screen and (min-width:720px ) {
+  @media screen and (min-width:720px ) {
 
-   /* html {
-      font-size: 62.5%;
-    }*/
+      html {
+        font-size: 62.5%;
+      }
 
-    nav ul {
-      display: initial;
+      nav ul {
+        display: initial;
 
-    }
+      }
 
-    nav aside {
-      display: none;
-    }
+      nav aside {
+        display: none;
+      }
 
-    a:hover {
-      color:cyan;
-    }
-
-
+      a:hover {
+        color:cyan;
+      }
+      
+      #picture {
+        background-position: center -4.5rem; /* place l'image par rapport à son centre */
+      }
  
  /* fin de responsive design pour laptop et desktop */ 
 }
+
+
+/* 
+  Configuration pour desktop surperieur à 1024px
+*/
+
+  @media screen and (min-width: 1024px) {
+    #picture {
+      background-position: center -11.5rem; /* place l'image par rapport à son centre */
+    }
+    
+
+  }
